@@ -1,0 +1,5 @@
+# encrypt 
+openssl  smime  -encrypt -aes256  -in  Daring\ game.txt  -binary  -outform DEM  -out  dg.txt.enc  publickey.pem
+
+# decrypt 
+penssl smime -decrypt -in dg.txt.enc -binary -inform DEM -inkey privatekey.pem -out gggg.txt
